@@ -32,8 +32,7 @@ public class Post extends Base {
 
 //    @Entao("^exibe a expressão \"([^\"]*)\" no titulo da guia$")
 //    public void exibe_a_expressão_no_titulo_da_guia(String produto) {
-//
-//
+//      assertTrue(base.driver.getTitle().contains(produto));
 //
 //    }
 
