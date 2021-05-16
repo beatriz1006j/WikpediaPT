@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2950439600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Consulta pelo curso Mantis",
+        "description": "",
+        "id": "consulta;consulta-pelo-curso-mantis",
+        "after": [
+          {
+            "result": {
+              "duration": 1110993400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9048056000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "que acesso o site da iterays",
+            "match": {
+              "location": "Post.que_acesso_o_site_da_iterays()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3606562601,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "pesquiso por \"Mantis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mantis",
+                  "offset": 14
+                }
+              ],
+              "location": "Post.pesquiso_por(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Consulta",
+    "description": "",
+    "id": "consulta",
+    "keyword": "Feature",
+    "uri": "Post.feature"
+  }
+]

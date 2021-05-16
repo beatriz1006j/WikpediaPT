@@ -27,8 +27,7 @@ public class Post extends Base {
 //    public void que_acesso_a_Wikipedia_em_Portugues() throws Throwable {
 //        base.driver.get(url);
 //    }
-//
-//    @When("^pesquiso por \"([^\"]*)\"$")
+////  @When("^pesquiso por \"([^\"]*)\"$")
 //    public void pesquiso_por(String produto) throws Throwable {
 //        base.driver.findElement(By.id("searchInpt")).sendKeys(produto + Keys.ENTER);
 //        //base.driver.findElement(By.cssSelector("button.wvui-button ")).click();
