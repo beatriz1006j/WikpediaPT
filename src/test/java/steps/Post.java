@@ -23,21 +23,7 @@ public class Post extends Base {
         this.base = base;
     }
 
-//    @Given("^que acesso a Wikipedia em Portugues$")
-//    public void que_acesso_a_Wikipedia_em_Portugues() throws Throwable {
-//        base.driver.get(url);
-//    }
-////  @When("^pesquiso por \"([^\"]*)\"$")
-//    public void pesquiso_por(String produto) throws Throwable {
-//        base.driver.findElement(By.id("searchInpt")).sendKeys(produto + Keys.ENTER);
-//        //base.driver.findElement(By.cssSelector("button.wvui-button ")).click();
-//    }
 
-//    @Entao("^exibe a expressao \"([^\"]*)\" no titulo da guia$")
-//    public void exibe_a_expressão_no_titulo_da_guia(String produto) {
-//      assertTrue(base.driver.getTitle().contains(produto));
-//
-//    }
 
     @Given("^que acesso o site da iterays$")
     public void que_acesso_o_site_da_iterays() throws Throwable {
@@ -51,10 +37,7 @@ public class Post extends Base {
 
     }
 
-//    @Then("^exibe a expressao \"([^\"]*)\" no titulo da guia$")
-//    public void exibe_a_expressão_no_titulo_da_guia(String produto) {
-//        assertTrue(base.driver.getTitle().contains(produto));
-//    }
+
 
 }
 
