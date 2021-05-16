@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2950439600,
+  "duration": 7448327200,
   "status": "passed"
 });
 formatter.scenario({
@@ -32,7 +32,7 @@ formatter.match({
   "location": "Post.que_acesso_o_site_da_iterays()"
 });
 formatter.result({
-  "duration": 9048056000,
+  "duration": 6789107700,
   "status": "passed"
 });
 formatter.match({
@@ -45,11 +45,11 @@ formatter.match({
   "location": "Post.pesquiso_por(String)"
 });
 formatter.result({
-  "duration": 3606562601,
+  "duration": 13894722600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1110993400,
+  "duration": 40540410100,
   "status": "passed"
 });
 });
