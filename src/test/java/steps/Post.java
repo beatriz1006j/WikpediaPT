@@ -2,6 +2,7 @@ package steps;
 
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
@@ -22,20 +23,41 @@ public class Post extends Base {
         this.base = base;
     }
 
-    @Given("^que acesso a Wikipedia em Portugues$")
-    public void que_acesso_a_Wikipedia_em_Portugues() throws Throwable {
-        base.driver.get(url);
-    }
+//    @Given("^que acesso a Wikipedia em Portugues$")
+//    public void que_acesso_a_Wikipedia_em_Portugues() throws Throwable {
+//        base.driver.get(url);
+//    }
+//
+//    @When("^pesquiso por \"([^\"]*)\"$")
+//    public void pesquiso_por(String produto) throws Throwable {
+//        base.driver.findElement(By.id("searchInpt")).sendKeys(produto + Keys.ENTER);
+//        //base.driver.findElement(By.cssSelector("button.wvui-button ")).click();
+//    }
 
-    @When("^pesquiso por \"([^\"]*)\"$")
-    public void pesquiso_por(String produto) throws Throwable {
-        base.driver.findElement(By.id("searchInpt")).sendKeys(produto + Keys.ENTER);
-    }
-
-//    @Entao("^exibe a expressão \"([^\"]*)\" no titulo da guia$")
+//    @Entao("^exibe a expressao \"([^\"]*)\" no titulo da guia$")
 //    public void exibe_a_expressão_no_titulo_da_guia(String produto) {
 //      assertTrue(base.driver.getTitle().contains(produto));
 //
 //    }
 
+    @Given("^que acesso o site da iterays$")
+    public void que_acesso_o_site_da_iterays() throws Throwable {
+        base.driver.get(url);
+
+    }
+
+    @When("^pesquiso por \"([^\"]*)\"$")
+    public void pesquiso_por(String produto) throws Throwable {
+       base.driver.findElement(By.id("searchtext")).sendKeys(produto + Keys.ENTER);
+
+    }
+
+//    @Then("^exibe a expressao \"([^\"]*)\" no titulo da guia$")
+//    public void exibe_a_expressão_no_titulo_da_guia(String produto) {
+//        assertTrue(base.driver.getTitle().contains(produto));
+//    }
+
 }
+
+
+

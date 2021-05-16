@@ -20,7 +20,7 @@ public class Artigo {
 
     @Before
     public void iniciar(){
-        url = "https://pt.wikipedia.org/";
+        url = "https://iterasys.com.br/";
         System.setProperty("webdriver.chrome.driver", "drivers/chrome/89/chromedriver.exe");
 
         driver = new ChromeDriver();
@@ -33,17 +33,21 @@ public class Artigo {
     public void procurarArtigo(){
     driver.get(url);
 
-        driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa");
-        driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
-        assertTrue(driver.getTitle().contains("Ovo de Páscoa"));
+
+//        driver.findElement(By.id("searchtext")).sendKeys("Mantis");
+        driver.findElement(By.id("searchtext")).sendKeys(Keys.ENTER);
+//        //driver.findElement(By.cssSelector("button.wvui-button")).click();
+//        assertTrue(driver.getTitle().contains("Ovo de Páscoa"));
 
 
        //assertEquals("Ovo de Páscoa - Wikipédia, a enciclopédia livre", driver.getTitle());// que esta na guia ativa
+
+
 
         }
 
     @After
     public void finalizar(){
-    //driver.quit();
+    driver.quit();
     }
 }

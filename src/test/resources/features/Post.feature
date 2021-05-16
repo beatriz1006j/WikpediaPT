@@ -1,8 +1,8 @@
 Feature: Consulta
-  Scenario: Consulta de Ovo de Pascoa
-  Given que acesso a Wikipedia em Portugues
-  When pesquiso por "Ovo de Pascoa"
-  #Then exibe a expressão "Ovo de Pascoa" no titulo da guia
+  Scenario: Consulta pelo curso Mantis
+  Given que acesso o site da iterays
+  When pesquiso por "Mantis"
+#  Then exibe a expressao "Iterasys - Cusros de Teste e QA" no titulo da guia
 
 
 #  Funcionalidade: Consulta
