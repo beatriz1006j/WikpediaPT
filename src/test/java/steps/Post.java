@@ -23,22 +23,15 @@ public class Post extends Base {
         this.base = base;
     }
 
-
-
     @Given("^que acesso o site da iterays$")
     public void que_acesso_o_site_da_iterays() throws Throwable {
         base.driver.get(url);
-
     }
 
     @When("^pesquiso por \"([^\"]*)\"$")
     public void pesquiso_por(String produto) throws Throwable {
        base.driver.findElement(By.id("searchtext")).sendKeys(produto + Keys.ENTER);
-
     }
-
-
-
 }
 
 

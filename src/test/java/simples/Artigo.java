@@ -32,8 +32,6 @@ public class Artigo {
     @Test
     public void procurarArtigo(){
     driver.get(url);
-
-
 //        driver.findElement(By.id("searchtext")).sendKeys("Mantis");
         driver.findElement(By.id("searchtext")).sendKeys(Keys.ENTER);
 //        //driver.findElement(By.cssSelector("button.wvui-button")).click();
@@ -41,9 +39,6 @@ public class Artigo {
 
 
        //assertEquals("Ovo de Páscoa - Wikipédia, a enciclopédia livre", driver.getTitle());// que esta na guia ativa
-
-
-
         }
 
     @After

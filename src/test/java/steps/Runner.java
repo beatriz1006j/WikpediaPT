@@ -18,11 +18,7 @@ import org.junit.runner.RunWith;
                 "html:target/relatorioSimples",
                 "json:target/relatorioSimples.json",
                 "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/dashboard.html"
-
-
         }
-
-
 )
 public class Runner {
 
